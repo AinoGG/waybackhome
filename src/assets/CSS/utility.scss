@@ -1,0 +1,32 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    @media(max-width:1200px) {
+        padding: 0px 5px;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-jcc-aic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-jcsb-aic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-fdc {
+    display: flex;
+    flex-direction: column;
+}
+
+.w100p{
+    width: 100%;
+}

@@ -1,0 +1,20 @@
+
+
+.title-button__blue {
+    background-color: rgba($color: #CDEAF5, $alpha: .11);    
+    font-size: 42px;    
+    min-height: 85px;
+    &:hover{
+        background-color: #CDEAF5;
+    }
+    
+}
+
+.button-start__red {
+    background-color: rgba($color: #CB4545, $alpha: .61);
+    font-size: 36px;
+    &:hover{
+        background-color: #CB4545;
+        box-shadow: 0px 0px 4px #CB4545;
+    }
+}
