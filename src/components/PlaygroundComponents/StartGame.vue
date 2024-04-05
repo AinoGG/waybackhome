@@ -1,14 +1,16 @@
 <template>
     <section class="wrapper">
-        Section Start Game
+        <Interface />
     </section>
 </template>
 <script setup lang="ts">
-
+import Interface from '@/components/Interface/Interface.vue'
 </script>
 
 <style lang="scss">
 .wrapper {
-    background: center / cover no-repeat url('../assets/images/GenerateImages/window\(3\).jpg');
+    background: center / cover no-repeat url(../../assets/images/GenerateImages/window_1.jpg);
+    width: 100vw;
+    height: 100vh;
 }
 </style>
