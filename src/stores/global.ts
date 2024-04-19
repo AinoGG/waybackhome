@@ -5,7 +5,8 @@ interface globalObject {
     time: string,
     weather: 'sunny' | 'rainy' | 'foggy' | 'snowy' | string,
     eventID: string,
-    currentText: string
+    currentText: string,
+    title: string
 
 }
 
@@ -16,7 +17,8 @@ export const useGlobalStore = defineStore('auth', {
         time: '7:47',
         weather: 'sunny',
         eventID: 'startGame',
-        currentText: ''
+        currentText: '',
+        title: ''
       }
     },
   })
