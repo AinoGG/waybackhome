@@ -1,3 +1,11 @@
+<template>
+    <section class="mainscreen">
+        <h1>Путь домой</h1>
+        <MenuList v-if="store.auth" />
+        <AuthForm v-if="!store.auth" />
+    </section>
+</template>
+
 <script setup lang="ts">
 import { useAuthStore } from '@/stores/auth'
 import AuthForm from './AuthForm.vue';
@@ -10,15 +18,6 @@ store.isAuth !== 'false' ? store.auth = true : store.auth = false
 
 
 </script>
-
-<template>
-    <section class="mainscreen">
-        <h1>Путь домой</h1>
-        <MenuList v-if="store.auth" />
-        <AuthForm v-if="!store.auth" />
-    </section>
-</template>
-
 <style lang="scss">
 .mainscreen {
     width: 100vw;
@@ -31,7 +30,8 @@ store.isAuth !== 'false' ? store.auth = true : store.auth = false
     background-size: cover;
     background-position: center;
     position: relative;
-    h1{
+
+    h1 {
         font-size: 200px;
         position: absolute;
         top: 0;
@@ -39,6 +39,7 @@ store.isAuth !== 'false' ? store.auth = true : store.auth = false
         opacity: .3;
         font-weight: 600;
     }
+
     &::before {
         content: '';
         width: 100%;
